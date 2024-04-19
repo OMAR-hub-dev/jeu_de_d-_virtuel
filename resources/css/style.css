@@ -159,6 +159,13 @@ i {
 .btn-commuter {
     top: 410px;
 }
+.btn-selection{
+    top:470px;
+    width: 350px;
+    color: #3983a8ca;
+    display: none ;
+}
+.btn-selection i{color: #9517a6e3;}
 
 .de {
     position: absolute;
