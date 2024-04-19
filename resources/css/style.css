@@ -37,7 +37,7 @@ body {
     clear: both;
 }
 
-.joueur_panel_1, .joueur_panel_2  {
+.joueur_panel_1, .joueur_panel_2 {
     width: 50%;
     float: left;
     padding: 100px;
@@ -68,7 +68,7 @@ body {
 }
 
 .active {
-    background-color: #f7f7f7;
+    background-color: #ad96a1ae;
 }
 
 .active .nom-joueur {
@@ -162,10 +162,10 @@ i {
 .btn-selection{
     top:470px;
     width: 350px;
-    color: #3983a8ca;
+    color: #c14f86ae;
     display: none ;
 }
-.btn-selection i{color: #9517a6e3;}
+.btn-selection i{color: #3fccccaf;}
 
 .de {
     position: absolute;
@@ -174,13 +174,12 @@ i {
     transform: translateX(-50%);
     height: 100px;
     box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.3);
+    border: 1px solid #ad96a1ae;
+    border-radius: 6px;
 }
 
 .vainqueur {
-    background-color: #f7f7f7;
+   color: #79c812d8;
+   font-size: 70px;
 }
 
-.vainqueur .nom-joueur {
-    font-weight: 300;
-    color: #17a623;
-}
