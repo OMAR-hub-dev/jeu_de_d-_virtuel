@@ -9,7 +9,9 @@ const nouveauJeu = document.querySelector('.btn-nouveau');
 const de = document.querySelector('.de');
 const btnSelection = document.querySelector('.btn-selection');
 const btnCommuter = document.querySelector('.btn-commuter');
-const nomJoueur = [document.getElementById('nom-1'), document.getElementById('nom-2')]
+const nomJoueur = [document.getElementById('nom-1'), document.getElementById('nom-2')];
+const rule = document.querySelector('.rule');
+const sidebare = document.querySelector('.sidebar');
 
 
 
@@ -25,6 +27,7 @@ nouveauJeu.addEventListener('click', () => {
     scoreElements.forEach(score => score.textContent = 0);
     encoursElements.forEach(encours => encours.textContent = 0);
     lancer.style.display = 'block';
+    sidebare.style.display = 'none';
     scoreEnCours = 0;
 });
 
@@ -93,3 +96,13 @@ btnCommuter.addEventListener('click', () => {
     }
 });
 // *************les régles du jeu************************************************************************************************
+rule.addEventListener('click',(e)=>{
+    e.stopPropagation();
+    rule.style.display = 'none';
+    sidebare.style.display = 'block';
+})
+
+window.addEventListener('click', ()=>{
+    rule.style.display = 'block';
+    sidebare.style.display = 'none';
+    });
