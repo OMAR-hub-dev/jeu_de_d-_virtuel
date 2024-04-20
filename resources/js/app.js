@@ -31,7 +31,7 @@ nouveauJeu.addEventListener('click', () => {
     scoreEnCours = 0;
 });
 
-// *****************Gestion du clic sur le bouton "Lancer le dé"****************************************************************
+// ***************** Gestion du clic sur le bouton "Lancer le dé "****************************************************************
 lancer.addEventListener('click', () => {
     const joueurActif = joueurs.find(joueur => joueur.classList.contains('active'));
     const index = joueurs.indexOf(joueurActif);
@@ -51,7 +51,7 @@ lancer.addEventListener('click', () => {
                 encoursElements[index].textContent = 0;
                 scoreEnCours = 0;
             }
-        if(scoreElements[index].textContent >= 30){
+        if(scoreElements[index].textContent >= 100){
             nomJoueur[index].classList.add('vainqueur');
             nomJoueur[index].textContent = 'bravo !!!!';
             lancer.style.display = 'none';
@@ -63,7 +63,7 @@ lancer.addEventListener('click', () => {
         }
 });
 
-//***************** Sélection du joueur actif****************************************************************
+//***************** Sélection du joueur actif ****************************************************************
 joueurs.forEach((joueur, index) => {
     joueur.addEventListener('click', () => {
         joueur.classList.toggle('active');
@@ -87,7 +87,7 @@ btnCommuter.addEventListener('click', () => {
         scoreElements[index].textContent = scroreActuel;
         encoursElements[index].textContent = 0;
         scoreEnCours =0; 
-        if(scoreElements[index].textContent>=30){
+        if(scoreElements[index].textContent>=100){
             nomJoueur[index].classList.add('vainqueur');
             nomJoueur[index].textContent = 'bravo!!!!';
             lancer.style.display = 'none';
@@ -95,7 +95,7 @@ btnCommuter.addEventListener('click', () => {
 
     }
 });
-// *************les régles du jeu************************************************************************************************
+// *************Afficher les régles du jeu************************************************************************************************
 rule.addEventListener('click',(e)=>{
     e.stopPropagation();
     rule.style.display = 'none';
