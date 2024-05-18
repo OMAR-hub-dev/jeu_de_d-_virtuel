@@ -23,9 +23,9 @@ body {
 }
 
 .wrapper {
-    width: 60%;
+    width: 60em;
     position: absolute;
-    top: 50%;
+    top:50%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: #fff;
@@ -205,12 +205,12 @@ i {
   .sidebar{
     z-index: 999;
     position: fixed;
-    top: 13%;
-    left: 2%;
+    top: 2.5em;
+    left: 2em;
     bottom: 0;
-    width: 30%;
-    height: 75%;
-    padding: 25px;
+    width: 30em;
+    height: 30em;
+    padding: 1.5em;
     background: #f4efef;
     font-family: "Nunito Sans", serif;
     font-weight: 400;

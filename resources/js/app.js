@@ -28,6 +28,7 @@ nouveauJeu.addEventListener('click', () => {
     encoursElements.forEach(encours => encours.textContent = 0);
     lancer.style.display = 'block';
     sidebare.style.display = 'none';
+    btnCommuter.style.display = 'none';
     scoreEnCours = 0;
 });
 
@@ -66,9 +67,11 @@ lancer.addEventListener('click', () => {
 //***************** Sélection du joueur actif ****************************************************************
 joueurs.forEach((joueur, index) => {
     joueur.addEventListener('click', () => {
+        btnCommuter.style.display = 'block';
         joueur.classList.toggle('active');
         if (joueurs[(index + 1) % 2].classList.contains('active')) {
             joueurs[(index + 1) % 2].classList.remove('active');
+            
         }
         btnSelection.style.display = 'none';
     });
